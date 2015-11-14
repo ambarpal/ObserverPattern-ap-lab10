@@ -9,18 +9,16 @@ public class TemperatureSensor implements Subject{
 	private ArrayList<TemperatureGenerator> updaters = new ArrayList<>();
 	private TemperatureLog lastUpdate;
 	RandomNumberGenerator r = new RandomNumberGenerator();
-	TemperatureSensor(){
-		updaters.add(new TemperatureGenerator(new TemperatureLog("Delhi", 35.0)).startThread());
-		updaters.add( new TemperatureGenerator( new TemperatureLog("Mumbai", 35.0) ).startThread());
-		updaters.add(new TemperatureGenerator(new TemperatureLog("Shrinagar", 35.0)).startThread());
-
-		notifyObservers();
-	}
-	public void senseTemperatures(){
-		notifyAll();
+	public TemperatureSensor(){
+		addLocation("Delhi");
+		addLocation("Mumbai");
+		addLocation("Shrinagar");
 	}
 	public void addLocation(String name){
-
+		updaters.add(new TemperatureGenerator(new TemperatureLog(name, 35.0)).startThread());
+	}
+	public void stopSensing(){
+		updaters.forEach(TemperatureGenerator::stopGenerating);
 	}
 	@Override
 	synchronized public void registerObserver(Observer observer){
@@ -66,7 +64,7 @@ public class TemperatureSensor implements Subject{
 			}
 		}
 
-		public void stopUpdating(){
+		public void stopGenerating(){
 			isWorking = false;
 		}
 
