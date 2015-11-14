@@ -32,4 +32,9 @@ public class TemperatureSensor implements Subject{
 	synchronized public void notifyObservers(){
 		for (Observer o : observers) o.update();
 	}
+	
+	@Override
+	synchronized public Object getUpdate(){
+		return temps;
+	}
 }
