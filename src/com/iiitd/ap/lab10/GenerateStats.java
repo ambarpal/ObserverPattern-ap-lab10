@@ -31,8 +31,8 @@ public class GenerateStats implements Observer{
 			Collections.sort(sortedTemp);
 			Double median=0.0;
 			int sz = sortedTemp.size();
-//			if (sortedTemp.size() % 2 == 0) median = (sortedTemp.get(sz / 2) + sortedTemp.get(sz / 2 + 1)) / 2.0;
-//			else median = sortedTemp.get((sz + 1) / 2);
+			if (sortedTemp.size() % 2 == 0) median = (sortedTemp.get(sz / 2 - 1) + sortedTemp.get(sz / 2)) / 2.0;
+			else median = sortedTemp.get((sz + 1) / 2 - 1);
 			Double mean = 0.0, max = 0.0, min = Double.MAX_VALUE;
 			for(Double d : past) {
 				mean += d;

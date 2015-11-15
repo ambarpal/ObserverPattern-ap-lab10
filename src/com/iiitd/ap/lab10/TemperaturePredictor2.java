@@ -26,7 +26,7 @@ public class TemperaturePredictor2 implements Observer{
 			if(past.size()>1) {
 				prediction = temperatureLog.getTemperature() + (temperatureLog.getTemperature() - past.peek())/(past.size()-1);
 			}
-			System.out.println("Temperature Predictor 1: Temperature prediction for " + temperatureLog.getLocation() + ": " + prediction + " degrees.");
+			System.out.println("Temperature Predictor 2: Temperature prediction for " + temperatureLog.getLocation() + ": " + prediction + " degrees.");
 		}
 	}
 }
