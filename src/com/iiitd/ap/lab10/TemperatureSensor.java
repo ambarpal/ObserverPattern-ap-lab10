@@ -8,7 +8,7 @@ public class TemperatureSensor implements Subject{
 	private List<Observer> observers = Collections.synchronizedList(new ArrayList<>());
 	private ArrayList<TemperatureGenerator> updaters = new ArrayList<>();
 	private ArrayList<TemperatureLog> lastUpdate;
-	RandomNumberGenerator r = new RandomNumberGenerator();
+	RandomTemperatureGenerator r = new RandomTemperatureGenerator();
 	public TemperatureSensor(){
 		addLocation("Delhi");
 		addLocation("Mumbai");

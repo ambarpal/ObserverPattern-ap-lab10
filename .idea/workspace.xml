@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f99b8d8-805c-46ed-842b-a23bbc7d854e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/RandomTemperatureGenerator.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/RandomNumberGenerator.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java" afterPath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperatureSensor.java" afterPath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperatureSensor.java" />
     </list>
     <ignored path="ObserverPattern-ap-lab10.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperatureLog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -86,17 +88,17 @@
         <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperatureSensor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenerateStats.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GenerateStats.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6111111">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,12 +116,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomNumberGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/RandomNumberGenerator.java">
+      <file leaf-file-name="RandomTemperatureGenerator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/RandomTemperatureGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="0.2777778">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#184#185#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,6 +149,8 @@
         <option value="$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor1.java" />
         <option value="$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor2.java" />
         <option value="$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java" />
+        <option value="$PROJECT_DIR$/src/com/iiitd/ap/lab10/RandomNumberGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/iiitd/ap/lab10/RandomTemperatureGenerator.java" />
       </list>
     </option>
   </component>
@@ -661,7 +668,7 @@
       <created>1447507843181</created>
       <option name="number" value="Default" />
       <updated>1447507843181</updated>
-      <workItem from="1447544386155" duration="5424000" />
+      <workItem from="1447544386155" duration="6858000" />
     </task>
     <task id="LOCAL-00001" summary="Added timestamp">
       <created>1447546026542</created>
@@ -717,11 +724,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447549520280</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implemented GenerateData minus Median">
+      <created>1447549875646</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1447549875646</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5424000" />
+    <option name="totallyTimeSpent" value="6858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -771,7 +784,8 @@
     <MESSAGE value="Implemented SerializeTemperature" />
     <MESSAGE value="Implemented TemperaturePredictor1" />
     <MESSAGE value="Fixed TemperaturePredictors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed TemperaturePredictors" />
+    <MESSAGE value="Implemented GenerateData minus Median" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented GenerateData minus Median" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -816,14 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/RandomNumberGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -836,14 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperatureLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -866,18 +864,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperatureSensor.java">
+    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -894,12 +884,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java">
+    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6111111">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperatureSensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperatureLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/RandomTemperatureGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2777778">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
           </folding>
         </state>
       </provider>
