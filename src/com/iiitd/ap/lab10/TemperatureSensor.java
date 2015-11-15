@@ -70,6 +70,7 @@ public class TemperatureSensor implements Subject{
 
 		synchronized private void updateTemperature() {
 			temperatureLog.setTemperature(r.next());
+			temperatureLog.updateTimestamp();
 			lastUpdate = this.temperatureLog;
 		}
 	}
