@@ -39,7 +39,7 @@ public class GenerateStats implements Observer{
 				max = Double.max(max, d);
 				min = Double.min(min, d);
 			}
-			mean/=past.size();
+			mean /= past.size();
 			System.out.println("Temperature Predictor 1: Temperature Stats for " + temperatureLog.getLocation() + ": ");
 			System.out.println("\tMean: " + mean);
 			System.out.println("\tMaximum: " + max);
