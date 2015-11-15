@@ -7,7 +7,7 @@ import java.util.List;
 public class TemperatureSensor implements Subject{
 	private List<Observer> observers = Collections.synchronizedList(new ArrayList<>());
 	private ArrayList<TemperatureGenerator> updaters = new ArrayList<>();
-	private TemperatureLog lastUpdate;
+	private ArrayList<TemperatureLog> lastUpdate;
 	RandomNumberGenerator r = new RandomNumberGenerator();
 	public TemperatureSensor(){
 		addLocation("Delhi");
@@ -40,6 +40,14 @@ public class TemperatureSensor implements Subject{
 		return lastUpdate;
 	}
 
+	synchronized private void updateAndNotify(TemperatureLog temperatureLog){
+		lastUpdate.add(temperatureLog);
+		if(lastUpdate.size()==updaters.size()){
+			notifyObservers();
+			lastUpdate.clear();
+		}
+	}
+
 	private class TemperatureGenerator extends Thread{
 		TemperatureLog temperatureLog;
 		private boolean isWorking;
@@ -56,7 +64,6 @@ public class TemperatureSensor implements Subject{
 		public void run() {
 			while(isWorking){
 				updateTemperature();
-				notifyObservers();
 				try {
 					Thread.sleep(5000);
 				} catch (InterruptedException ignored) {
@@ -71,7 +78,7 @@ public class TemperatureSensor implements Subject{
 		synchronized private void updateTemperature() {
 			temperatureLog.setTemperature(r.next());
 			temperatureLog.updateTimestamp();
-			lastUpdate = this.temperatureLog;
+			updateAndNotify(temperatureLog);
 		}
 	}
 }
