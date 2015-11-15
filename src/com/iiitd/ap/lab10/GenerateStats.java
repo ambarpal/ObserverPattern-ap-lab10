@@ -1,6 +1,9 @@
 package com.iiitd.ap.lab10;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -21,10 +24,16 @@ public class GenerateStats implements Observer{
 		for (TemperatureLog temperatureLog : temperatureLogs) {
 			pastTemperatures.putIfAbsent(temperatureLog.getLocation(), new LinkedList<>());
 			Queue<Double> past = pastTemperatures.get(temperatureLog.getLocation());
-			if(past.size()==MAXLIMIT) past.poll();
+			if(past.size() == MAXLIMIT) past.poll();
 			past.offer(temperatureLog.getTemperature());
-			//TODO: Calculate Median
-			Double mean = 0.0, max = 0.0, min = Double.MAX_VALUE, median = 0.0;
+			ArrayList<Double> sortedTemp = new ArrayList<>();
+			for (Double temp : past) sortedTemp.add(temp);
+			Collections.sort(sortedTemp);
+			Double median;
+			int sz = sortedTemp.size();
+			if (sortedTemp.size() % 2 == 0) median = (sortedTemp.get(sz / 2) + sortedTemp.get(sz / 2 + 1)) / 2.0;
+			else median = sortedTemp.get((sz + 1) / 2);
+			Double mean = 0.0, max = 0.0, min = Double.MAX_VALUE;
 			for(Double d : past) {
 				mean += d;
 				max = Double.max(max, d);

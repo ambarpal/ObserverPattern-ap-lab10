@@ -23,11 +23,13 @@ public class TemperatureSensor implements Subject{
 	@Override
 	synchronized public void registerObserver(Observer observer){
 		observers.add(observer);
+		observer.setSubject(this);
 	}
 	
 	@Override
 	synchronized public void removeObserver(Observer observer){
 		observers.remove(observer);
+		observer.setSubject(null);
 	}
 	
 	@Override
