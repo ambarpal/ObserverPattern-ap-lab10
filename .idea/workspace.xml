@@ -655,7 +655,7 @@
       <created>1447507843181</created>
       <option name="number" value="Default" />
       <updated>1447507843181</updated>
-      <workItem from="1447544386155" duration="3803000" />
+      <workItem from="1447544386155" duration="3814000" />
     </task>
     <task id="LOCAL-00001" summary="Added timestamp">
       <created>1447546026542</created>
@@ -687,11 +687,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447548203685</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Some IDEA settings">
+      <created>1447548217373</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1447548217373</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3803000" />
+    <option name="totallyTimeSpent" value="3814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
