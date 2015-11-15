@@ -12,7 +12,7 @@ public class TemperatureSensor implements Subject{
 	public TemperatureSensor(){
 		addLocation("Delhi");
 		addLocation("Mumbai");
-		addLocation("Shrinagar");
+		addLocation("Srinagar");
 	}
 	public void addLocation(String name){
 		updaters.add(new TemperatureGenerator(new TemperatureLog(name, 35.0)).startThread());
