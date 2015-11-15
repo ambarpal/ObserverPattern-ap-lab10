@@ -4,8 +4,6 @@
     <list default="true" id="1f99b8d8-805c-46ed-842b-a23bbc7d854e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java" afterPath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor1.java" afterPath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor2.java" afterPath="$PROJECT_DIR$/src/com/iiitd/ap/lab10/TemperaturePredictor2.java" />
     </list>
     <ignored path="ObserverPattern-ap-lab10.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,8 +95,8 @@
       <file leaf-file-name="GenerateStats.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4814815">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6111111">
+              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -663,7 +661,7 @@
       <created>1447507843181</created>
       <option name="number" value="Default" />
       <updated>1447507843181</updated>
-      <workItem from="1447544386155" duration="5080000" />
+      <workItem from="1447544386155" duration="5424000" />
     </task>
     <task id="LOCAL-00001" summary="Added timestamp">
       <created>1447546026542</created>
@@ -713,11 +711,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447549118569</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed TemperaturePredictors">
+      <created>1447549520280</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1447549520280</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5080000" />
+    <option name="totallyTimeSpent" value="5424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -766,7 +770,8 @@
     <MESSAGE value="Some IDEA settings" />
     <MESSAGE value="Implemented SerializeTemperature" />
     <MESSAGE value="Implemented TemperaturePredictor1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented TemperaturePredictor1" />
+    <MESSAGE value="Fixed TemperaturePredictors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed TemperaturePredictors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -891,8 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/iiitd/ap/lab10/GenerateStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4814815">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.6111111">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
