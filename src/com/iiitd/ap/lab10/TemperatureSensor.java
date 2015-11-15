@@ -7,7 +7,7 @@ import java.util.List;
 public class TemperatureSensor implements Subject{
 	private List<Observer> observers = Collections.synchronizedList(new ArrayList<>());
 	private ArrayList<TemperatureGenerator> updaters = new ArrayList<>();
-	private ArrayList<TemperatureLog> lastUpdate;
+	private ArrayList<TemperatureLog> lastUpdate = new ArrayList<>();
 	RandomTemperatureGenerator r = new RandomTemperatureGenerator();
 	public TemperatureSensor(){
 		addLocation("Delhi");

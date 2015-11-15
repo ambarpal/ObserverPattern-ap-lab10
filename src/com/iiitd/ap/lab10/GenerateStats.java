@@ -29,10 +29,10 @@ public class GenerateStats implements Observer{
 			ArrayList<Double> sortedTemp = new ArrayList<>();
 			for (Double temp : past) sortedTemp.add(temp);
 			Collections.sort(sortedTemp);
-			Double median;
+			Double median=0.0;
 			int sz = sortedTemp.size();
-			if (sortedTemp.size() % 2 == 0) median = (sortedTemp.get(sz / 2) + sortedTemp.get(sz / 2 + 1)) / 2.0;
-			else median = sortedTemp.get((sz + 1) / 2);
+//			if (sortedTemp.size() % 2 == 0) median = (sortedTemp.get(sz / 2) + sortedTemp.get(sz / 2 + 1)) / 2.0;
+//			else median = sortedTemp.get((sz + 1) / 2);
 			Double mean = 0.0, max = 0.0, min = Double.MAX_VALUE;
 			for(Double d : past) {
 				mean += d;
@@ -40,7 +40,7 @@ public class GenerateStats implements Observer{
 				min = Double.min(min, d);
 			}
 			mean /= past.size();
-			System.out.println("Temperature Predictor 1: Temperature Stats for " + temperatureLog.getLocation() + ": ");
+			System.out.println("Temperature Generator: Temperature Stats for " + temperatureLog.getLocation() + ": ");
 			System.out.println("\tMean: " + mean);
 			System.out.println("\tMaximum: " + max);
 			System.out.println("\tMinimum: " + min);
