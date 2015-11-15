@@ -1,12 +1,15 @@
 package com.iiitd.ap.lab10;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
+
+/**
+ * @author ambar14012
+ * @author palash14072
+ */
 
 public class GenerateStats implements Observer{
 	private static final int MAXLIMIT = 100;

@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
+/**
+ * @author ambar14012
+ * @author palash14072
+ */
+
 public class SerializeTemperature implements Observer{
 	Subject subject;
 	@Override

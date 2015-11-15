@@ -2,6 +2,11 @@ package com.iiitd.ap.lab10;
 
 import java.util.Date;
 
+/**
+ * @author ambar14012
+ * @author palash14072
+ */
+
 public class RandomTemperatureGenerator {
 	long seed;
 	public RandomTemperatureGenerator() {

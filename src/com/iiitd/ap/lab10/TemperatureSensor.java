@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * @author ambar14012
+ * @author palash14072
+ */
+
 public class TemperatureSensor implements Subject{
 	private List<Observer> observers = Collections.synchronizedList(new ArrayList<>());
 	private ArrayList<TemperatureGenerator> updaters = new ArrayList<>();

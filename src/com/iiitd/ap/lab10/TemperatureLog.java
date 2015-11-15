@@ -4,6 +4,11 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Date;
 
+/**
+ * @author ambar14012
+ * @author palash14072
+ */
+
 public class TemperatureLog implements Serializable {
 	String location;
 	Double temperature;

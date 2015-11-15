@@ -5,6 +5,11 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * @author ambar14012
+ * @author palash14072
+ */
+
 public class TemperaturePredictor1 implements Observer{
 	private static final int MAXLIMIT = 5;
 	Subject subject;
